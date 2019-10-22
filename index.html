@@ -1,94 +1,100 @@
 <!doctype html>
 <html lang="is">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vöruhúsið</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-      <header>
-          <h1>Prílihúsið</h1>
-          <a href="index.html">Forsíða </a>
-          <a href="pages/products.html"> Vörur </a>
-          <a href="pages/course.html"> Námskeið </a>
-          <a href="pages/staff.html"> Starfsfólk </a>
-          <a href="pages/cart.html"> Karfa </a>
-        </header>
-      
-        <main>
-          <div class="grid">
-      
-            <div class="grid__row">
-              <div class="grid__col">
-                <img class="image" src="img/climbing-store.jpg" alt="Mynd af verslun">
-              </div>
-              <div class="grid__col">
-                <div class="text">
-                  <h2>Allar vörurnar</h2>
-                  <p>Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
-                  <div class="button">
-                    <p>Skoða vörur</p>
-                  </div>
-      
-                </div>
-              </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið</title>
+
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__titill">Prílihúsið</h1>
+    <a class="header__link--valinn" href="index.html">Forsíða </a>
+    <a class="header__link" href="pages/products.html"> Vörur </a>
+    <a class="header__link" href="pages/course.html"> Námskeið </a>
+    <a class="header__link" href="pages/staff.html"> Starfsfólk </a>
+    <a class="header__link" href="pages/cart.html"> <img class="image" src="img/cart.svg" alt="Mynd af körfu">Karfa(6)
+    </a>
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <div class="grid__row">
+        <div class="grid__col">
+          <img class="image" src="img/climbing-store.jpg" alt="Mynd af verslun">
+        </div>
+        <div class="grid__col">
+          <div class="text">
+            <h2>Allar vörurnar</h2>
+            <p>Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
+            <div class="button">
+              <p>Skoða vörur</p>
             </div>
-            <div class="grid__row">
-              <div class="grid__col">
-                <div class="text">
-                  <h2>Besta starfsfólkið</h2>
-                  <p>Starfsfólkið okkar hugsar vel um þig.</p>
-                  <div class="button">
-                    <p>Kynnast starfsfólki</p>
-                  </div>
-                </div>
-              </div>
-              <div class="grid__col">
-                <img class="image" src="img/team.jpg" alt="Mynd af höndum teymisins">
-              </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="grid__row">
+        <div class="grid__col">
+          <div class="text">
+            <h2>Besta starfsfólkið</h2>
+            <p>Starfsfólkið okkar hugsar vel um þig.</p>
+            <div class="button">
+              <p>Kynnast starfsfólki</p>
             </div>
           </div>
-        </main>
-      
-        <footer>
-          <div class="col">
-            <h3>Vöruflokkar</h2>
-            <p>Nauðsynjavörur</p>
-            <p>Frábærar vörur</p>
-            <p>Ómissandi vörur</p>
-            <p>Ótrúlegar vörur</p>
-            <p>Magnaðar vörur</p>
-          </div>
-      
-          <div class="col">
-              <h3>Vöruflokkar</h2>
-              <p>Trylltar vörur</p>
-              <p>Geggjaðar vörur</p>
-              <p>Svakalegar vörur</p>
-              <p>Fáranlegar vörur</p>
-              <p>Klikkaðar vörur</p> 
-          </div>
-      
-          <div class="col">
-              <h3>Námskeið</h2>
-              <p>V0-V1 námskeið</p>
-              <p>V2-V4 námskeið</p>
-              <p>V5-V7 námskeið</p>
-              <p>Fjallaklifur námskeið</p>
-          </div>
-      
-          <div class="col">
-            <h3>Síður</h2>
-            <p>Allar vörur</p>
-            <p>Starfsfólk</p>
-            <p>Námskeið</p>
-            <p>Karfa</p>
-          </div>
-      
-        </footer> 
+        </div>
+        <div class="grid__col">
+          <img class="image" src="img/team.jpg" alt="Mynd af höndum teymisins">
+        </div>
+      </div>
+    </div>
+  </main>
 
-  </body>
+  <footer>
+    <div class="col">
+      <h3>Vöruflokkar</h2>
+        <p>Nauðsynjavörur</p>
+        <p>Frábærar vörur</p>
+        <p>Ómissandi vörur</p>
+        <p>Ótrúlegar vörur</p>
+        <p>Magnaðar vörur</p>
+    </div>
+
+    <div class="col">
+      <h3>Vöruflokkar</h2>
+        <p>Trylltar vörur</p>
+        <p>Geggjaðar vörur</p>
+        <p>Svakalegar vörur</p>
+        <p>Fáranlegar vörur</p>
+        <p>Klikkaðar vörur</p>
+    </div>
+
+    <div class="col">
+      <h3>Námskeið</h2>
+        <p>V0-V1 námskeið</p>
+        <p>V2-V4 námskeið</p>
+        <p>V5-V7 námskeið</p>
+        <p>Fjallaklifur námskeið</p>
+    </div>
+
+    <div class="col">
+      <h3>Síður</h2>
+        <p>Allar vörur</p>
+        <p>Starfsfólk</p>
+        <p>Námskeið</p>
+        <p>Karfa</p>
+    </div>
+
+    <p>© 2019 Prílihúsið</p>
+
+  </footer>
+
+</body>
+
 </html>

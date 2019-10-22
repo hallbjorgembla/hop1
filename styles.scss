@@ -15,6 +15,7 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
+  font-size: 16px;
 }
 
 //products
@@ -54,6 +55,84 @@ html { /* stylelint-disable-line */
 }
 
 //staff
+
+//header
+.header {
+
+  background-color: #ff5000;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  
+  
+  
+
+  &__link {
+    flex-direction: row;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__link:hover {
+    color: white;
+  }
+
+  &__link--valinn {
+    flex-direction: row;
+    align-self: center;
+    text-decoration: underline;
+    color: black;
+  }
+
+  &__link--valinn:hover {
+    color: white;
+  }
+
+  &__link--karfa {
+    flex-direction: column;
+    align-self: center;
+
+
+    text-decoration: none;
+    color: black;
+  }
+
+  &__link--karfa:hover {
+    color: white;
+  }
+
+  img {
+    width: 20%;
+    height: auto;
+  }
+
+}
+
+//footer
+footer {
+  background-color: #00b7ff;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  line-height: 16px;
+
+  padding: 2rem;
+  
+
+  p{
+    color: white;
+    padding-top: 1rem;
+  }
+
+  p:hover{
+    color: black;
+  }
+
+}
 
 
 // TODO sækja allar sass skrár

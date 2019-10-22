@@ -1,6 +1,18 @@
 
 # Hópverkefni 1
 
+## Upplýsingar um keyrslu verkefnis
+
+## Lýsing á uppsetningu verkefnis
+
+## Meðlimir
+
+Auður Katarína Theodórsdóttir, akt6@hi.is
+
+Hallbjörg Embla Sigtryggsdóttir, hes85@hi.is
+
+## Lýsing verkefnis
+
 Verkefnið felst í því að smíða vef eftir forskrift.
 
 Gefnar eru [fyrirmyndir](utlit/) í `500px`, `800px` og `1500px` með grind ásamt `1500px` án grindar og yfirliti yfir virkni vefs í `utlit/video.mp4`.
