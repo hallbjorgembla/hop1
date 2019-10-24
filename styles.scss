@@ -24,6 +24,19 @@ main {
   max-width: 1200px;
   padding-left: 18px;
   padding-right: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-family: 'Oswald', serif;
+}
+
+h2{
+  font-family: 'Oswald', serif;
+}
+
+h3{
+  font-family: 'Oswald', serif;
 }
 
 //index
@@ -48,6 +61,10 @@ main {
     }
   }
 
+  &__titill{
+    font-size: 36px;
+  }
+
   &__mynd{
     max-width: 100%;
     margin-bottom: $gutter;
@@ -55,6 +72,11 @@ main {
 
   &__text{
     align-self: stretch;
+
+    & > p{
+      margin-top: 2*$gutter;
+      margin-bottom: 2*$gutter;
+    }
   }
 
   &__reverse{
@@ -63,9 +85,28 @@ main {
     }
   }
 
+  &__button1{
+    background-color: #00b7ff;
+    border-radius: 5px;
+    padding-left: 4*$gutter;
+    padding-right: 4*$gutter;
+    padding-top: 0.5*$gutter;
+    padding-bottom: 0.5*$gutter;
+
+    margin-bottom: $gutter;
+  }
+
   &__button{
     background-color: #00b7ff;
+    border-radius: 5px;
+    padding-left: 3*$gutter;
+    padding-right: 3*$gutter;
+    padding-top: 0.5*$gutter;
+    padding-bottom: 0.5*$gutter;
+
+    margin-bottom: $gutter;
   }
+
 }
 
 
@@ -233,7 +274,6 @@ main {
 
 //header
 .header {
-
   font-family: 'Oswald', serif;
   background-color: #ff5000;
   display: flex;
