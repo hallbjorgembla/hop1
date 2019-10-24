@@ -20,45 +20,165 @@ html { /* stylelint-disable-line */
 
 //products
 .cards {
-  overflow: visible;
-
+  
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    justify-content: space-around;
+    margin-left: 10%; 
+    margin-right: 10%;
   }
 
   &__col {
     padding-right: 10px;
     padding-left: 10px;
-    width: 33%;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; 
 
-  &__takkar {
-    display: flex;
+    @media (max-width: 501px) {
+      width: 100%;
+    }
+    
+    
+    @media (min-width: 799px) {
+      width: 50%;
+    }
+    
+    @media (min-width: 1200px) {
+      width: 33%;  
+    } 
   }
 }
 
 .card {
   display: flex;
   flex-direction: column;
-
   margin-bottom: 10px;
   padding: 10px;
   width: 100%;
   height: 100%;
-  max-width: 470px;
-  max-height: 320px;
+  max-width: 100%;
+  max-height: 100%;
   overflow: visible;
+  line-height: 3em;
 
   &__mynd {
-    width: 75%;
+    width: 70%;
+  }
+
+  &__takkar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    flex-grow: 2;
+      img {
+        width: 15%;
+      }
+    }
+
+  &__textbox {
+    flex-grow: 3;
+    input{
+      width: 100%;
+    }
   }
 }
 
 //staff
+.staff-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  margin: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  @media (min-width: 1200px) {
+    margin-left: 15%;
+    margin-right: 15%;
+
+  }
+
+}
+
+
+.staff-card {
+  background-color: transparent;
+  position: relative;
+
+
+  @media (max-width: 501px) {
+    width: 100%;
+  }
+  
+  @media (min-width: 502px) {
+    width: 50%;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 40%; 
+
+  }
+}
+
+.staff-card-inner{
+  height: 400px;
+  width: 100%;
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+
+.staff-card-front, .staff-card-back{
+  position: absolute;
+	top: 0;
+  left: 0;
+  padding: 10px;
+	margin: 10px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+}
+
+.staff-card-front{
+  img {
+      height: 100%;
+      width: 100%;
+    }
+}
+
+.staff-card-back {
+  background-color: white;
+  color: black;
+  max-width: 100%;
+
+  text-align: center;
+
+  transform: rotateY(180deg);
+
+  &__texti{
+    margin-top: 100px;
+    font-size: 0.75em;
+    line-height: 1.5em;
+
+    h1 {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.staff-card:hover .staff-card-front {
+  transform: rotateY(180deg);
+}
+
+.staff-card:hover .staff-card-back {
+  transform: rotateY(0deg);
+}
+
+
 
 //header
 .header {
@@ -69,9 +189,6 @@ html { /* stylelint-disable-line */
   align-content: center;
   flex-direction: column;
   
-  
-  
-
   &__link {
     flex-direction: row;
     align-self: center;
@@ -111,7 +228,6 @@ html { /* stylelint-disable-line */
     width: 20%;
     height: auto;
   }
-
 }
 
 //footer
@@ -138,6 +254,5 @@ footer {
 
 }
 
-
 // TODO sækja allar sass skrár
-//@import "scss/...";
+//@import "scss/..."
