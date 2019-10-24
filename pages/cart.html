@@ -19,9 +19,13 @@
             <a class="header__link" href="products.html"> VÖRUR </a>
             <a class="header__link" href="course.html"> NÁMSKEIÐ </a>
             <a class="header__link" href="staff.html"> STARFSFÓLK </a>
+
         </nav>
-        <a class="header__link--karfa" href="cart.html"> <img class="header__link__mynd" src="../img/cart.svg"
-                alt="Mynd af körfu">Karfa(6) </a>
+        <span class="header__karfa">
+            <a class="header__link" href="cart.html"> <img class="header__link__mynd" src="../img/cart.svg"
+                    alt="Mynd af körfu">Karfa(6) </a>
+        </span>
+
 
     </header>
 
@@ -33,17 +37,26 @@
                     <img class="grid__mynd" src="../img/backpack.jpg" alt="Mynd af bakpoka">
                 </div>
                 <div class="grid__col">
-                    <h2>Bakpoki</h2>
+
+                    <h2 class="grid__titill">Bakpoki</h2>
                     <p>Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
-                    <h3>49.900 kr.-</h3>
-                    <form>
-                        <label>Fjöldi:</label>
-                        <input type="number" name="points" min="1" step="1" value="2">
-                        <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">
-                            Uppfæra</button>
-                        <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu"> Eyða úr
-                            körfu</button>
-                    </form>
+
+                    <div class="grid__col__neðst">
+                        <h3>49.900 kr.-</h3>
+                        <form class="grid__form">
+                            <label>Fjöldi:</label>
+                            <div class="form">
+                                <input type="number" name="points" min="1" step="1" value="2">
+                                <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">
+                                    Uppfæra</button>
+                                <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">
+                                    Eyða úr
+                                    körfu</button>
+
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
 
@@ -52,17 +65,24 @@
                     <img class="grid__mynd" src="../img/chalkbag.jpg" alt="Mynd af bakpoka">
                 </div>
                 <div class="grid__col">
-                    <h2>Kalkpoki</h2>
+
+                    <h2 class="grid__titill">Kalkpoki</h2>
                     <p>Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
-                    <h3>4.900 kr.-</h3>
-                    <form>
-                        <label for="points">Fjöldi:</label>
-                        <input type="number" name="points" min="1" step="1" value="4">
-                        <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">
-                            Uppfæra</button>
-                        <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu"> Eyða úr
-                            körfu</button>
-                    </form>
+
+                    <div class="grid__col__neðst">
+                        <h3>4.900 kr.-</h3>
+                        <form class="grid__form">
+                            <label for="points">Fjöldi:</label>
+                            <div class="form">
+                            <input type="number" name="points" min="1" step="1" value="4">
+                            <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">
+                                Uppfæra</button>
+                            <button type="button"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu"> Eyða úr
+                                körfu</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -292,28 +312,28 @@
                                     <label>Gildistími:</label>
                                     <label>Mán </label>
                                     <div class="manAr">
-                                    <select name="man">
-                                        <option>01</option>
-                                        <option>02</option>
-                                        <option>03</option>
-                                        <option>04</option>
-                                        <option>05</option>
-                                        <option>06</option>
-                                        <option>07</option>
-                                        <option>08</option>
-                                        <option>09</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                        <option>12</option>
-                                    </select>
+                                        <select name="man">
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                            <option>04</option>
+                                            <option>05</option>
+                                            <option>06</option>
+                                            <option>07</option>
+                                            <option>08</option>
+                                            <option>09</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
 
-                                    <label> Ár </label>
-                                    <select name="ar">
-                                        <option>2019</option>
-                                        <option>2020</option>
-                                        <option>2021</option>
-                                        <option>2022</option>
-                                    </select>
+                                        <label> Ár </label>
+                                        <select name="ar">
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                            <option>2022</option>
+                                        </select>
                                     </div>
                                 </div>
                             </form>
