@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
 }
-
+$gutter: 20px;
 *,
 *::before,
 *::after {
@@ -16,7 +16,58 @@ html { /* stylelint-disable-line */
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
   font-size: 16px;
+  
 }
+
+main {
+  margin: $gutter auto;
+  max-width: 1200px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+//index
+
+.grid{
+
+  &__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1*$gutter;
+    margin-right: -1*$gutter;   
+  }
+
+  &__col{
+    width: 50%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    @media (max-width: 500px){
+      width: 100%;
+    }
+  }
+
+  &__mynd{
+    max-width: 100%;
+    margin-bottom: $gutter;
+  }
+
+  &__text{
+    align-self: stretch;
+  }
+
+  &__reverse{
+    @media (max-width: 500px){
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__button{
+    background-color: #00b7ff;
+  }
+}
+
 
 //products
 .cards {
@@ -59,20 +110,45 @@ html { /* stylelint-disable-line */
 //header
 .header {
 
+  font-family: 'Oswald', serif;
   background-color: #ff5000;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
-  
-  
+
+  line-height: 24px;
+  padding: 24px;
   
 
-  &__link {
+  &__titill{
+    align-self: center;
+
+    margin-bottom: 36px;
+    font-weight: bold;
+  }
+
+  &__linkar{
     flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+
+    font-weight: bold;
+  }
+  
+  &__link {
     align-self: center;
     text-decoration: none;
     color: black;
+    
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__mynd{
+      width: 20px;
+      height: auto;
+    }
   }
 
   &__link:hover {
@@ -80,7 +156,8 @@ html { /* stylelint-disable-line */
   }
 
   &__link--valinn {
-    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 16px;
     align-self: center;
     text-decoration: underline;
     color: black;
@@ -91,10 +168,7 @@ html { /* stylelint-disable-line */
   }
 
   &__link--karfa {
-    flex-direction: column;
     align-self: center;
-
-
     text-decoration: none;
     color: black;
   }
@@ -103,33 +177,64 @@ html { /* stylelint-disable-line */
     color: white;
   }
 
-  img {
-    width: 20%;
-    height: auto;
+  @media (min-width: 800px){
+    &__link--karfa{
+      align-self: flex-end;
+      margin-top: -2*$gutter;
+    }
   }
 
 }
 
 //footer
-footer {
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #00b7ff;
-
-  display: flex;
+  display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  line-height: 16px;
+  justify-content: space-around;
 
-  padding: 2rem;
-  
+  line-height: 24px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
-  p{
-    color: white;
-    padding-top: 1rem;
+ 
+  &__col{
+    width: 25%;
+
+    @media (max-width: 800px){
+      width: 50%;
   }
 
-  p:hover{
+  }
+
+  &__col > h3{
+    font-size: 18px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  
+  &__link {
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+
+  &__link:hover{
     color: black;
+  }
+
+  &__neðst{
+    padding-top: 32px;
+    font-size: 12px;
+    color: black;
+    align-self: center;
   }
 
 }

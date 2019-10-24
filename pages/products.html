@@ -8,16 +8,23 @@
 
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
+
         <h1 class="header__titill">Prílihúsið</h1>
-        <a class="header__link" href="../index.html">Forsíða </a>
-        <a class="header__link--valinn" href="products.html"> Vörur </a>
-        <a class="header__link" href="course.html"> Námskeið </a>
-        <a class="header__link" href="staff.html"> Starfsfólk </a>
-        <a class="header__link" href="cart.html"> <img class="image" src="../img/cart.svg" alt="Mynd af körfu">Karfa(6) </a>
+        <nav class="header__linkar">
+            <a class="header__link" href="../index.html">FORSÍÐA </a>
+            <a class="header__link--valinn" href="products.html"> VÖRUR </a>
+            <a class="header__link" href="course.html"> NÁMSKEIÐ </a>
+            <a class="header__link" href="staff.html"> STARFSFÓLK </a>
+        </nav>
+        <a class="header__link" href="cart.html"> <img class="header__link__mynd" src="../img/cart.svg"
+                alt="Mynd af körfu">Karfa(6)
+        </a>
+
     </header>
 
     <main>
@@ -80,73 +87,76 @@
                 </div>
 
                 <div class="cards__col">
-                <section class="card">
-                    <img class="card__mynd" src="../img/Dring.jpg" alt="karbína">
-                    <h2>Karabína 10 stk.</h2>
-                    <p>Þessi karbína hefur styrkleika til þess að halda á 10 tonnum. Það er meira en 20 snorlax
-                        pókemonar.
-                    </p>
-                    <h3>10.900 kr.-</h3>
-                    <p>Fjöldi:</p>
-                    <form>
-                        <input type="number" name="points" min="1" step="1" value="1">
-                    </form>
-                    <button type="button">Setja í körfu</button>
-                </section>
+                    <section class="card">
+                        <img class="card__mynd" src="../img/Dring.jpg" alt="karbína">
+                        <h2>Karabína 10 stk.</h2>
+                        <p>Þessi karbína hefur styrkleika til þess að halda á 10 tonnum. Það er meira en 20 snorlax
+                            pókemonar.
+                        </p>
+                        <h3>10.900 kr.-</h3>
+                        <p>Fjöldi:</p>
+                        <form>
+                            <input type="number" name="points" min="1" step="1" value="1">
+                        </form>
+                        <button type="button">Setja í körfu</button>
+                    </section>
                 </div>
 
                 <div class="cards__col">
-                <section class="card">
-                    <img class="card__mynd" src="../img/Harness.jpg" alt="klifurbelti">
-                    <h2>Klifurbelti</h2>
-                    <p>Hágæða klifurbelti með nanótækni og innbyggt bluetooth til þess að tengjast símanum þínum.</p>
-                    <h3>1.999.900 kr.-</h3>
-                    <p>Fjöldi:</p>
-                    <form>
-                        <input type="number" name="points" min="1" step="1" value="1">
-                    </form>
-                    <button type="button">Setja í körfu</button>
-                </section>
+                    <section class="card">
+                        <img class="card__mynd" src="../img/Harness.jpg" alt="klifurbelti">
+                        <h2>Klifurbelti</h2>
+                        <p>Hágæða klifurbelti með nanótækni og innbyggt bluetooth til þess að tengjast símanum þínum.
+                        </p>
+                        <h3>1.999.900 kr.-</h3>
+                        <p>Fjöldi:</p>
+                        <form>
+                            <input type="number" name="points" min="1" step="1" value="1">
+                        </form>
+                        <button type="button">Setja í körfu</button>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="col">
-            <h3>Vöruflokkar</h2>
-                <p>Nauðsynjavörur</p>
-                <p>Frábærar vörur</p>
-                <p>Ómissandi vörur</p>
-                <p>Ótrúlegar vörur</p>
-                <p>Magnaðar vörur</p>
+    <footer class="footer">
+        <div class="footer__col">
+            <h3>Vöruflokkar</h3>
+            <a class="footer__link" href="products.html"> Nauðsynjavörur </a>
+            <a class="footer__link" href="products.html"> Frábærar vörur </a>
+            <a class="footer__link" href="products.html"> Ómissandi vörur </a>
+            <a class="footer__link" href="products.html"> Ótrúlegar vörur </a>
+            <a class="footer__link" href="products.html"> Magnaðar vörur </a>
         </div>
 
-        <div class="col">
-            <h3>Vöruflokkar</h2>
-                <p>Trylltar vörur</p>
-                <p>Geggjaðar vörur</p>
-                <p>Svakalegar vörur</p>
-                <p>Fáranlegar vörur</p>
-                <p>Klikkaðar vörur</p>
+        <div class="footer__col">
+            <h3>Vöruflokkar</h3>
+            <a class="footer__link" href="products.html"> Trylltar vörur </a>
+            <a class="footer__link" href="products.html"> Geggjaðar vörur </a>
+            <a class="footer__link" href="products.html"> Svakalegar vörur </a>
+            <a class="footer__link" href="products.html"> Fáranlegar vörur </a>
+            <a class="footer__link" href="products.html"> Klikkaðar vörur </a>
         </div>
 
-        <div class="col">
-            <h3>Námskeið</h2>
-                <p>V0-V1 námskeið</p>
-                <p>V2-V4 námskeið</p>
-                <p>V5-V7 námskeið</p>
-                <p>Fjallaklifur námskeið</p>
+        <div class="footer__col">
+            <h3>Námskeið</h3>
+            <a class="footer__link" href="course.html"> V0-V1 námskeið </a>
+            <a class="footer__link" href="course.html"> V2-V4 námskeið </a>
+            <a class="footer__link" href="course.html"> V5-V7 námskeið </a>
+            <a class="footer__link" href="course.html"> Fjallaklifur námskeið </a>
+
         </div>
 
-        <div class="col">
-            <h3>Síður</h2>
-                <p>Allar vörur</p>
-                <p>Starfsfólk</p>
-                <p>Námskeið</p>
-                <p>Karfa</p>
+        <div class="footer__col">
+            <h3>Síður</h3>
+            <a class="footer__link" href="products.html"> Vörur </a>
+            <a class="footer__link" href="staff.html"> Starfsfólk </a>
+            <a class="footer__link" href="course.html"> Námskeið </a>
+            <a class="footer__link" href="cart.html"> Karfa</a>
         </div>
-        <p>© 2019 Prílihúsið</p>
+
+        <p class="footer__neðst">© 2019 Prílihúsið</p>
 
     </footer>
 </body>
