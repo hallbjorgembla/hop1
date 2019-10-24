@@ -83,8 +83,12 @@ main {
   &__col {
     padding-right: 10px;
     padding-left: 10px;
-    width: 100%;
+    width: 33%;
     margin-bottom: 20px;
+  }
+
+  &__takkar {
+    display: flex;
   }
 }
 
@@ -101,7 +105,7 @@ main {
   overflow: visible;
 
   &__mynd {
-    width: 100px;
+    width: 75%;
   }
 }
 
