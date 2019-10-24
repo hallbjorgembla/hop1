@@ -43,18 +43,25 @@
 
         <div class="cards">
             <div class="cards__row">
-                <div class="cards__col">
+                <div class="cards__col2">
                     <section class="card">
                         <h2 class="card__title">Almennar upplýsingar</h2>
                         <div class="card__content">
                             <form>
-                                <label for="nafn">Nafn:</label>
-                                <input type="text" name="nafn" id="nafn" required>
-                                <label for="heimilisfang"> Heimilisfang:</label>
-                                <input type="text" name="heimilisfang" id="heimilisfang" required>
-                                <label for="aldur">Aldur:</label>
-                                <input type="text" name="aldur" id="aldur" required>
-                                <label>Námskeið:
+                                <div class="card__reitir">
+                                    <label for="nafn">Nafn:</label>
+                                    <input type="text" name="nafn" id="nafn" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label for="heimilisfang"> Heimilisfang:</label>
+                                    <input type="text" name="heimilisfang" id="heimilisfang" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label for="aldur">Aldur:</label>
+                                    <input type="text" name="aldur" id="aldur" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label>Námskeið:</label>
                                     <select class="namskeid">
                                         <option>V0 - V1</option>
                                         <option>V2 - V4</option>
@@ -62,22 +69,29 @@
                                         <option>Krakkanámskeið</option>
                                         <option>Fjallaklifur</option>
                                     </select>
-                                </label>
+
+                                </div>
                             </form>
                         </div>
                     </section>
                 </div>
-                <div class="cards__col">
+                <div class="cards__col2">
                     <section class="card">
                         <h2 class="card__title">Greiðsluupplýsingar</h2>
                         <div class="card__content">
                             <form>
-                                <label for="kortanumer">Kortanúmer:</label>
-                                <input type="text" name="kortanumer" id="kortanumer" required>
-                                <label for="korthafi"> Korthafi:</label>
-                                <input type="text" name="korthafi" id="korthafi" required>
-                                <label>Gildistími:
-                                    <label>Mán
+                                <div class="card__reitir">
+                                    <label for="kortanumer">Kortanúmer:</label>
+                                    <input type="text" name="kortanumer" id="kortanumer" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label for="korthafi"> Korthafi:</label>
+                                    <input type="text" name="korthafi" id="korthafi" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label>Gildistími: </label>
+                                        <div class="manAr">
+                                        <label>Mán</label>
                                         <select name="man">
                                             <option>01</option>
                                             <option>02</option>
@@ -92,17 +106,15 @@
                                             <option>11</option>
                                             <option>12</option>
                                         </select>
-                                    </label>
-                                    <label> Ár
-                                        <select name="ar">
-                                            <option>2019</option>
-                                            <option>2020</option>
-                                            <option>2021</option>
-                                            <option>2022</option>
-                                        </select>
-
-                                    </label>
-                                </label>
+                                    <label> Ár </label>
+                                    <select name="ar">
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                        </div>
+                                </div>
                             </form>
 
                         </div>

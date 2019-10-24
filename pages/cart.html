@@ -69,16 +69,21 @@
 
         <div class="cards">
             <div class="cards__row">
-                <div class="cards__col">
+                <div class="cards__col2">
                     <section class="card">
                         <h2 class="card__title">Sendingarupplýsingar</h2>
                         <div class="card__content">
                             <form>
-                                <label for="nafn">Nafn:</label>
-                                <input type="text" name="nafn" id="nafn" required>
-                                <label for="heimilisfang"> Heimilisfang:</label>
-                                <input type="text" name="heimilisfang" id="heimilisfang" required>
-                                <label>Póstnúmer:
+                                <div class="card__reitir">
+                                    <label for="nafn">Nafn:</label>
+                                    <input type="text" name="nafn" id="nafn" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label for="heimilisfang"> Heimilisfang:</label>
+                                    <input type="text" name="heimilisfang" id="heimilisfang" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label>Póstnúmer:</label>
                                     <select class="postnumer">
                                         <option value="val">-Velja póstnúmer-</option>
                                         <option>101 Reykjavík</option>
@@ -264,49 +269,53 @@
                                         <option>902 Vestmannaeyjum</option>
 
                                     </select>
-                                </label>
-
+                                </div>
                             </form>
                         </div>
                     </section>
                 </div>
 
-                <div class="cards__col">
+                <div class="cards__col2">
                     <section class="card">
                         <h2 class="card__title">Greiðsluupplýsingar</h2>
                         <div class="card__content">
                             <form>
-                                <label for="kortanumer">Kortanúmer:</label>
-                                <input type="text" name="kortanumer" id="kortanumer" required>
-                                <label for="korthafi"> Korthafi:</label>
-                                <input type="text" name="korthafi" id="korthafi" required>
-                                <label>Gildistími:
-                                    <label>Mán
-                                        <select name="man">
-                                            <option>01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
-                                            <option>06</option>
-                                            <option>07</option>
-                                            <option>08</option>
-                                            <option>09</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                        </select>
-                                    </label>
-                                    <label> Ár
-                                        <select name="ar">
-                                            <option>2019</option>
-                                            <option>2020</option>
-                                            <option>2021</option>
-                                            <option>2022</option>
-                                        </select>
+                                <div class="card__reitir">
+                                    <label for="kortanumer">Kortanúmer:</label>
+                                    <input type="text" name="kortanumer" id="kortanumer" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label for="korthafi"> Korthafi:</label>
+                                    <input type="text" name="korthafi" id="korthafi" required>
+                                </div>
+                                <div class="card__reitir">
+                                    <label>Gildistími:</label>
+                                    <label>Mán </label>
+                                    <div class="manAr">
+                                    <select name="man">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
 
-                                    </label>
-                                </label>
+                                    <label> Ár </label>
+                                    <select name="ar">
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                    </div>
+                                </div>
                             </form>
 
                         </div>
