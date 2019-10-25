@@ -14,7 +14,6 @@ $gutter: 20px;
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  // TODO fleiri grunn stillingar
   font-size: 16px;
   
 }
@@ -80,14 +79,6 @@ h3{
     }
 
   }
-
-  /*&__innihald{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-  }*/
-
 
   &__titill{
     font-size: 36px;
@@ -170,7 +161,6 @@ h3{
       }
     }
   }
-
 }
 
 .takki {
@@ -192,7 +182,6 @@ h3{
     color: white;
   }
 }
-
 
 //products
 .cards {
@@ -226,7 +215,6 @@ h3{
     @media (max-width: 500px) {
       width: 100%;
     }
-    
     
     @media (min-width: 501px) {
       width: 50%;
@@ -265,7 +253,6 @@ h3{
   }
 
   &__reitir {
-    //line-height: 1.5em;
     display: flex;
     justify-content: space-between;
 
@@ -322,7 +309,6 @@ h3{
   margin: 0.5*$gutter;
   margin-left: 10%;
   margin-right: 10%;
-
 }
 
 .staff-card {
@@ -400,8 +386,6 @@ h3{
   transform: rotateY(0deg);
 }
 
-
-
 //header
 .header {
   font-family: 'Oswald', serif;
@@ -456,19 +440,10 @@ h3{
   }
 
   &__karfa{
-    /*align-self: center;*/
-    /*margin-left: auto;*/
     text-decoration: none;
     color: black;
   }
-
-
-  /*@media (min-width: 800px){
-    &__link--karfa{
-      align-self: flex-end;
-      margin-top: -2*$gutter;
-    }
-  }*/
+  }
 }
 
 //footer
@@ -486,14 +461,12 @@ h3{
   padding-top: 2rem;
   padding-bottom: 2rem;
 
- 
   &__col{
     width: 25%;
 
     @media (max-width: 800px){
       width: 50%;
     }
-
   }
 
   &__col > h3{
@@ -521,6 +494,5 @@ h3{
     color: black;
     align-self: center;
   }
-
 }
 
