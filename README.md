@@ -14,6 +14,19 @@ Einnig má keyra síðuna með því að ýta [hér](https://notendur.hi.is/hes8
 
 ## Lýsing á uppsetningu verkefnis
 
+Í rót verkefnisins er html skrá fyrir forsíðu **index.html** ásamt skránum **grid.css** og **styles.css** fyrir útlit verkefnis. 
+
+**Styles.css** var þýdd úr skránni **styles.scss** sem inniheldur allt útlit verkefnisins.
+
+Í möppunni **pages** eru geymdar html skrár fyrir aðrar síður verkefnisins, þær eru:
+
+**products.html** fyrir síðuna Vörur,
+**course.html** fyrir síðuna Námskeið,
+**staff.html** fyrir síðuna Starfsfólk og
+**cart.html** fyrir síðuna Karfa.
+
+Í möppunni **img** eru allar myndir verkefnisins geymdar.
+
 ## Meðlimir
 
 Auður Katarína Theodórsdóttir, akt6@hi.is
