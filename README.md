@@ -20,10 +20,10 @@ Einnig má keyra síðuna með því að ýta [hér](https://notendur.hi.is/hes8
 
 Í möppunni **pages** eru geymdar html skrár fyrir aðrar síður verkefnisins, þær eru:
 
-**products.html** fyrir síðuna Vörur,
-**course.html** fyrir síðuna Námskeið,
-**staff.html** fyrir síðuna Starfsfólk og
-**cart.html** fyrir síðuna Karfa.
+-**products.html** fyrir síðuna Vörur,\
+-**course.html** fyrir síðuna Námskeið,\
+-**staff.html** fyrir síðuna Starfsfólk og\
+-**cart.html** fyrir síðuna Karfa.
 
 Í möppunni **img** eru allar myndir verkefnisins geymdar.
 
