@@ -10,7 +10,7 @@ Til þess að keyra verkefnið þarf að sækja þetta repository og keyra eftir
 
 En fyrst þarf að setja upp node.js á vélina.
 
-Einnig má keyra síðuna með því að ýta [hér] (https://notendur.hi.is/hes85/vefforritun/hop1/)
+Einnig má keyra síðuna með því að ýta [hér](https://notendur.hi.is/hes85/vefforritun/hop1/)
 
 ## Lýsing á uppsetningu verkefnis
 
