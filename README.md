@@ -6,7 +6,6 @@
 Til þess að keyra verkefnið þarf að sækja þetta repository og keyra eftirfarandi skipanir í terminal eða command line í möppu verkefnisins:
 
 `- nmp install`
-<br >
 `- nmp run dev`
 
 En fyrst þarf að setja upp node.js á vélina.
